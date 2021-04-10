@@ -1,31 +1,21 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-    <androidx.drawerlayout.widget.DrawerLayout
-
+<androidx.drawerlayout.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
         tools:openDrawer="start">
 
-
-
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        android:layout_gravity="start"
-android:fitsSystemWindows="true"
-        app:menu="@menu/activity_main_drawer" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
 
 
 
-    </androidx.drawerlayout.widget.DrawerLayout>
+
     <fragment
         android:id="@+id/map"
 
@@ -81,14 +71,15 @@ android:fitsSystemWindows="true"
 android:background="@drawable/rounded_bkg"
                 android:layout_marginBottom="16dp"
                 android:id="@+id/destination"/>
+
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:id="@+id/rec"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:id="@+id/rec"
+                android:layout_width="match_parent"
                 android:padding="8dp"
-                android:visibility="gone"
-                android:background="@color/white"/>
+                android:visibility="gone" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -110,3 +101,13 @@ android:background="@drawable/rounded_bkg"
         android:background="@drawable/btn_bkg"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/activity_main_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
