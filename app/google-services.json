@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "283263055811",
+    "project_id": "mtm-task",
+    "storage_bucket": "mtm-task.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283263055811:android:5f35a18805a91492066f76",
+        "android_client_info": {
+          "package_name": "net.senior.mtmtask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283263055811-7phmasc78of1m2afgt1rcu2c2np0nbko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqAreXGbPGr8bsKiaocfE9h0L_rO1Sb7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283263055811-7phmasc78of1m2afgt1rcu2c2np0nbko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
